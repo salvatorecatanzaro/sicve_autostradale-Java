@@ -1,0 +1,88 @@
+.menutext {
+	-fx-fill: WHITE;
+}
+
+.sidebarbutton {
+	-fx-background-color: transparent;
+	-fx-text-base-color: white;
+	-fx-font-size: 13;
+	-fx-padding: 5 1 1 1;
+	-fx-font-family: "Segoe UI"; /* TODO non sembra essere disponibile, cambialo*/
+	-fx-alignment: center-left;
+}
+
+.actionbutton {
+	-fx-background-color: #24A0ED;
+	-fx-text-base-color: white;
+}
+
+.comboboxaction {
+	-fx-background-color : WHITE;
+	-fx-text-fill: BLACK;
+}
+
+.sidebarbutton:hover {
+	-fx-background-color: #182020;
+	
+}
+
+.sidebarbutton:pressed {
+	-fx-border-color: white;
+	-fx-border-width: 0 0 0 1;
+}
+
+.sidebar {
+	-fx-background-color: #181818;
+}		
+
+/* Utilizzato per annullare il background grigio di default dello scroll pane*/
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.scrollpane {
+	-fx-background-color: #505050;
+	/*-fx-border-color: red;*/
+	-fx-border-width: 1 1 1 1;
+	
+}
+
+.gridpane {
+	/*-fx-border-color: black;*/
+}
+
+.borderpane {
+	/*-fx-border-color: yellow; */
+	-fx-background-color: #181818;
+}
+
+.textheader {
+	-fx-text-base-color: #181818;
+	-fx-background-color: #181818;
+	-fx-fill: WHITE;
+	-fx-padding: 5 1 1 1;
+	
+}
+
+.textwhite {
+	-fx-fill: WHITE;
+	-fx-text-base-color: WHITE;
+	-fx-text-fill: WHITE;
+}
+
+
+.logoutbutton {
+	-fx-background-color: transparent;
+	-fx-text-base-color: #24A0ED;
+	
+}
+
+.logoutbutton:hover {
+	-fx-background-color: transparent;
+	-fx-text-base-color: #505050;
+	
+}
+
+.errortext {
+	-fx-fill: RED;
+}

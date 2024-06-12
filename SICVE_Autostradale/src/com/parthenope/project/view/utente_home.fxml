@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ScrollPane?>
+
+
+<BorderPane fx:controller="com.parthenope.project.UtenteController" fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="337.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@style.css">
+   
+   <left>
+      <VBox fx:id="sidebar" prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+ 
+      </VBox>
+   </left>
+   
+   <top>
+
+       <HBox alignment="center_left" spacing="10">
+		    <GridPane hgap="10" vgap="5" >
+				  <Text fx:id="usernameLabel" styleClass="textheader" text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+		          <Text fx:id="username" styleClass="textheader" GridPane.columnIndex="1" GridPane.rowIndex="0"/> 
+		    </GridPane>
+		   	
+		   	<HBox alignment="center_right" >
+			    <GridPane hgap="10" vgap="5" >
+					<Text text="Avvisi abilitati" styleClass="textheader" GridPane.rowIndex="0" GridPane.columnIndex="10"/>
+				    <CheckBox GridPane.rowIndex="0" GridPane.columnIndex="11" onAction="#triggerAvvisi"/>     
+		    	</GridPane>
+		    </HBox>
+		    
+		    <HBox alignment="center_right" HBox.hgrow="ALWAYS">
+		    <GridPane hgap="10" vgap="5" >
+		    	<Button text="log out" styleClass="logoutbutton" onAction="#logout"/> 
+		    </GridPane>
+		    </HBox>
+		</HBox>
+       
+   </top>
+   <center>
+		   <ScrollPane fx:id="scrollPane" prefHeight="400.0" prefWidth="400.0">
+		       <content>
+				      <GridPane fx:id="gridPane" >
+				        <columnConstraints>
+				          
+				        </columnConstraints>
+				        <rowConstraints>
+				          
+				        </rowConstraints>
+				         <children>
+				         </children>
+				      </GridPane>
+				</content>
+		   </ScrollPane>
+   </center>
+</BorderPane>
